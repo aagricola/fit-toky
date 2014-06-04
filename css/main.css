@@ -140,7 +140,7 @@ these are needed to make sure the grid lays out in a pretty way.
 
 /* Circle CSS */
 .circle {
-    display: none;
+    display: block;
     /*transform: translate(-50%, -50%) scale(.5, .5) rotate(-20deg);
     -webkit-transform: translate(-50%, -50%) scale(.5, .5) rotate(-20deg);
     transition: transform .3s ease;
