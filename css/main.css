@@ -140,11 +140,20 @@ these are needed to make sure the grid lays out in a pretty way.
 
 /* Circle CSS */
 .circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 125%;
+	height: 125%;
     display: block;
-    /*transform: translate(-50%, -50%) scale(.5, .5) rotate(-20deg);
+    overflow: hidden;
+    opacity: 0;
+    background-color: rgba(218, 38, 123, .8);
+    /*border-radius: 100%;*/ /*this makes the square a circle*/
+    transform: translate(-50%, -50%) scale(.5, .5) rotate(-20deg);
     -webkit-transform: translate(-50%, -50%) scale(.5, .5) rotate(-20deg);
     transition: transform .3s ease;
-    -webkit-transition: -webkit-transform .3s ease-out, opacity .3s ease-out;*/
+    -webkit-transition: -webkit-transform .3s ease-out, opacity .3s ease-out;
 }
 /*
     Custom easing
@@ -164,6 +173,13 @@ these are needed to make sure the grid lays out in a pretty way.
 .circle-content {
     position: relative;
     top: 50%;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    font-weight: bold;text-transform: uppercase;
+    letter-spacing: .1em;
+    text-align: center;
+    color: #fff;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
