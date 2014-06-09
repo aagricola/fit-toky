@@ -150,6 +150,7 @@ these are needed to make sure the grid lays out in a pretty way.
     opacity: 0;
    
     /*border-radius: 100%;*/ /*this makes the square a circle*/
+    /* below is a rotated square in a square that makes an octogon*/
     transform: translate(-50%, -50%) scale(.5, .5) rotate(-90deg);
     -webkit-transform: translate(-50%, -50%) scale(.5, .5) rotate(-90deg);
     transition: transform .3s ease;
